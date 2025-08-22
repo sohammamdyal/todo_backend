@@ -8,6 +8,10 @@ const port = process.env.PORT || 3000;
 const cors = require("cors");
 app.use(cors());
 
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+  })
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
